@@ -40,6 +40,11 @@
 			margin-bottom: 20px;
 		}
     </style>
+    <script type="text/javascript">
+        function redirect() {
+            window.location.href = "dashboard.html";
+        }
+    </script>
 </head>
 <body>
     <form action="login.php" method="post">
@@ -48,7 +53,7 @@
         <input type="text" name="username" id="username" required>
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" required>
-        <input type="submit" value="Login">
+        <input type="submit" value="Login" onclick="redirect()">
     </form>
 </body>
 </html>
